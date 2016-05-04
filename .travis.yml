@@ -1,0 +1,11 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker pull fedora:23
+  - docker build -t spectrwm travis
+
+script:
+  - docker run -v $PWD:/src spectrwm make -C /src/linux
+  - docker run -v $PWD:/src spectrwm make -C /src/linux install
