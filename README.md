@@ -1,3 +1,5 @@
+![travis-ci status](https://travis-ci.org/larsks/spectrwm.svg?branch=master)
+
 spectrwm
 ========
 
